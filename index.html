@@ -399,29 +399,40 @@ pre {
             </div>
         </div></div>
     </div>
+    <style>
+        #teaser-image {
+            display: flex;
+            justify-content: center;
+        }
 
+        .video-container {
+            margin: 0 10px; /* Adjust margin as needed */
+            width: 25%; /* Set width to 25% to fit three videos side by side */
+        }
+
+        .video-background {
+            width: 100%;
+        }
+    </style>
     <section id="teaser-image">
-        <center>
-            <figure>
-                <video class="left" width="25%" autoplay loop muted playsinline class="video-background " >
-                    <source src="assets/loss_slam_closed_set_clip.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure>
-            <figure>
-                <video class="center" width="25%" autoplay loop muted playsinline class="video-background " >
-                    <source src="assets/loss_slam_geometric_clip.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure>
-            <figure>
-                <video class="right" width="25%" autoplay loop muted playsinline class="video-background " >
-                    <source src="assets/loss_slam_open_set_clip.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </figure>
-
-        </center>
+        <figure class="video-container">
+            <video class="left" autoplay loop muted playsinline class="video-background">
+                <source src="assets/loss_slam_closed_set_clip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+        <figure class="video-container">
+            <video class="center" autoplay loop muted playsinline class="video-background">
+                <source src="assets/loss_slam_geomtric_clip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+        <figure class="video-container">
+            <video class="right" autoplay loop muted playsinline class="video-background">
+                <source src="assets/loss_slam_open_set_clip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
     </section>
 
     <section id="news">
