@@ -399,18 +399,55 @@ pre {
             </div>
         </div></div>
     </div>
-    <style>
+    <!-- <style>
         #teaser-image {
             display: flex;
             justify-content: center;
         }
 
         #teaser-image .video-container {
+            max-width: 100%; /* Set maximum width to 100% of the viewport */
             margin: 10 10px; /* Adjust margin as needed */
             width: 1600%; /* Set width to 25% to fit three videos side by side */
         }
 
         #teaser-image .video-background {
+            width: 100%;
+        }
+    </style>
+    <section id="teaser-image">
+        <figure class="video-container">
+            <video class="left" autoplay loop muted playsinline class="video-background">
+                <source src="assets/loss_slam_closed_clipped.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+        <figure class="video-container">
+            <video class="center" autoplay loop muted playsinline class="video-background">
+                <source src="assets/geometric_clipped.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+        <figure class="video-container">
+            <video class="right" autoplay loop muted playsinline class="video-background">
+                <source src="assets/open_set_trimmed.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </figure>
+    </section> -->
+    <style>
+        #teaser-image {
+            display: flex;
+            justify-content: space-around; /* Align videos with equal space around them */
+            flex-wrap: wrap; /* Allow videos to wrap to the next line if necessary */
+        }
+    
+        .video-container {
+            width: calc(33.33% - 20px); /* Set width to approximately one-third of the viewport width */
+            margin: 10px; /* Adjust margin as needed */
+        }
+    
+        .video-background {
             width: 100%;
         }
     </style>
